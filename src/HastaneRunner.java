@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class HastaneRunner {
+
     private static Hastane hastane = new Hastane();
     private static String aktüelDurum;
 
@@ -87,9 +88,40 @@ public class HastaneRunner {
     public static Durum hastaDurumuBul(String aktüelDurum) {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
-        /*
-        1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
 
+        for (int i = 0; i < aktüelDurum.length(); i++) {
+
+            hastaDurumu.setAktüelDurum(aktüelDurum);
+            switch (aktüelDurum){
+                case "Allerji":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Bas Agrisi":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Diabet":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Soguk alginligi":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Migren":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Kalp hastaliklari":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                default:
+                    System.out.println("Gecerli bir durum degil");
+                    break;
+            }
+        }
+
+        return hastaDurumu;
+    }
+
+    /*
+        1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
         2)asagidaki durumlari switch veya if ile set ediniz
         case " Allerji":  aciliyet => false
         case " Bas agrisi":  aciliyet => false
@@ -101,14 +133,7 @@ public class HastaneRunner {
         System.out.println(“Gecerli bir durum degil");
         Ve return hastaDurumu;
 
-
-
-
-
          */
-        return hastaDurumu;
-
-    }
 
     public static Hasta hastaBul(String aktüelDurum) {
         Hasta hasta = new Hasta();
@@ -165,3 +190,4 @@ ediniz
 
     }
 }
+
