@@ -106,14 +106,14 @@ public class HastaneRunner {
                     hastaDurumu.setAciliyet(false);
                     break;
                 case "Migren":
-                    hastaDurumu.setAciliyet(false);
+                    hastaDurumu.setAciliyet(true);
                     break;
                 case "Kalp hastaliklari":
-                    hastaDurumu.setAciliyet(false);
+                    hastaDurumu.setAciliyet(true);
                     break;
                 default:
                     System.out.println("Gecerli bir durum degil");
-                    break;
+
             }
         }
 
