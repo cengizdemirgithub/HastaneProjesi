@@ -18,7 +18,8 @@ public class Durum {
         this.aciliyetDurumu = aciliyetDurumu;
     }
     public boolean aciliyetDurumu(){return aciliyetDurumu;}
-    public void setAciliyet(boolean aciliyetDurumu){
+    public boolean setAciliyet(boolean aciliyetDurumu){
         this.aciliyetDurumu=aciliyetDurumu();
+        return aciliyetDurumu;
     }
 }
