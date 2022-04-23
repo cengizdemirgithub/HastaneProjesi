@@ -88,8 +88,8 @@ public class HastaneRunner {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
 
-        /*
-=======
+
+
 
         for (int i = 0; i < aktüelDurum.length(); i++) {
 
@@ -139,13 +139,8 @@ public class HastaneRunner {
         Ve return hastaDurumu;
 
 
-
-
-
          */
-        return hastaDurumu;
 
-    }
 
     public static Hasta hastaBul(String aktüelDurum) {
         Hasta hasta = new Hasta();
