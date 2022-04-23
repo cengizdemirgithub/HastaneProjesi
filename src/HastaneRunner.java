@@ -87,7 +87,7 @@ public class HastaneRunner {
     public static Durum hastaDurumuBul(String aktüelDurum) {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
-<<<<<<< HEAD
+
         /*
 =======
 
@@ -124,7 +124,7 @@ public class HastaneRunner {
     }
 
     /*
->>>>>>> ustun
+
         1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
 
         2)asagidaki durumlari switch veya if ile set ediniz
