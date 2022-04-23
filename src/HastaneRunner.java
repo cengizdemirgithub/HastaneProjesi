@@ -88,9 +88,6 @@ public class HastaneRunner {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
 
-
-
-
         for (int i = 0; i < aktüelDurum.length(); i++) {
             switch (aktüelDurum){
                 case "Allerji":
