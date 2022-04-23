@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class HastaneRunner {
+
     private static Hastane hastane = new Hastane();
     private static String aktüelDurum;
 
@@ -72,15 +73,11 @@ public class HastaneRunner {
         /*
         1) kullanicidan hastaligini girmesini isteyiniz,// swictch case ile hastaligini numara ile girsin
         -elimizde kullanicaidan gelen hastalik ismi var
-
         2) aciliyet durumu metodu cagrilsin (true ya da false) (bilgilendrime yazilabilir)
         -kullanicidan gelen aciliyet durumu var
-
         3)doktorun unvani istenilecek (doktorUnvan metodu ile)
         -metoddan doktorun unvanini aliyoruz#
-
         4)"doktorunuz su isimdeki su unvandaki kisidir" vb yazdirilacak.
-
          */
     }
 
@@ -115,15 +112,13 @@ public class HastaneRunner {
 
         }
 
-     return hastaDurumu;
+        return hastaDurumu;
     }
 
 
 
     /*
-
         1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
-
         2)asagidaki durumlari switch veya if ile set ediniz
         case " Allerji":  aciliyet => false
         case " Bas agrisi":  aciliyet => false
@@ -134,8 +129,6 @@ public class HastaneRunner {
         default:
         System.out.println(“Gecerli bir durum degil");
         Ve return hastaDurumu;
-
-
          */
 
 
@@ -194,3 +187,4 @@ ediniz
 
     }
 }
+
