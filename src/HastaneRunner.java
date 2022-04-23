@@ -114,6 +114,7 @@ public class HastaneRunner {
                 default:
                     System.out.println("Gecerli bir durum degil");
 
+
             }
         }
 
