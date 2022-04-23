@@ -90,8 +90,6 @@ public class HastaneRunner {
         hastaDurumu.setAktüelDurum(aktüelDurum);
 
         for (int i = 0; i < aktüelDurum.length(); i++) {
-
-            hastaDurumu.setAktüelDurum(aktüelDurum);
             switch (aktüelDurum){
                 case "Allerji":
                     hastaDurumu.setAciliyet(false);
