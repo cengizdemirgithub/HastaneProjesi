@@ -58,9 +58,9 @@ public class HastaneRunner {
                 giris();
                 break;
         }
-        String unvan=doktorUnvan(aktüelDurum);
-        Doktor doktor=doktorBul(unvan);
-        System.out.println("Doktorunuz "+unvan+ " bölümünden "+ doktor.toString()+ "dur.");
+        String unvan = doktorUnvan(aktüelDurum);
+        Doktor doktor = doktorBul(unvan);
+        System.out.println("Doktorunuz " + unvan + " bölümünden " + doktor.toString() + "dur.");
 
 
 
@@ -87,36 +87,38 @@ public class HastaneRunner {
     public static Durum hastaDurumuBul(String aktüelDurum) {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
-
-        for (int i = 0; i < aktüelDurum.length(); i++) {
-            switch (aktüelDurum){
-                case "Allerji":
-                    hastaDurumu.setAciliyet(false);
-                    break;
-                case "Bas Agrisi":
-                    hastaDurumu.setAciliyet(false);
-                    break;
-                case "Diabet":
-                    hastaDurumu.setAciliyet(false);
-                    break;
-                case "Soguk alginligi":
-                    hastaDurumu.setAciliyet(false);
-                    break;
-                case "Migren":
-                    hastaDurumu.setAciliyet(true);
-                    break;
-                case "Kalp hastaliklari":
-                    hastaDurumu.setAciliyet(true);
-                    break;
-                default:
-                    System.out.println("Gecerli bir durum degil");
+        System.out.println("aktüel durum " + aktüelDurum);
 
 
-            }
+        switch (aktüelDurum) {
+            case "Allerji":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(false));
+
+            case "Bas Agrisi":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(false));
+                break;
+            case "Diabet":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(false));
+                break;
+            case "Soguk alginligi":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(false));
+                break;
+            case "Migren":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(true));
+                break;
+            case "Kalp hastaliklari":
+                System.out.println("hastanin aciliyet durumu : " + hastaDurumu.setAciliyet(true));
+                break;
+            default:
+                System.out.println("Gecerli bir durum degil");
+
+
         }
 
-        return hastaDurumu;
+     return hastaDurumu;
     }
+
+
 
     /*
 
