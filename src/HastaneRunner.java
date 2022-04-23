@@ -87,7 +87,44 @@ public class HastaneRunner {
     public static Durum hastaDurumuBul(String aktüelDurum) {
         Durum hastaDurumu = new Durum();
         hastaDurumu.setAktüelDurum(aktüelDurum);
+<<<<<<< HEAD
         /*
+=======
+
+        for (int i = 0; i < aktüelDurum.length(); i++) {
+
+            hastaDurumu.setAktüelDurum(aktüelDurum);
+            switch (aktüelDurum){
+                case "Allerji":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Bas Agrisi":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Diabet":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Soguk alginligi":
+                    hastaDurumu.setAciliyet(false);
+                    break;
+                case "Migren":
+                    hastaDurumu.setAciliyet(true);
+                    break;
+                case "Kalp hastaliklari":
+                    hastaDurumu.setAciliyet(true);
+                    break;
+                default:
+                    System.out.println("Gecerli bir durum degil");
+
+
+            }
+        }
+
+        return hastaDurumu;
+    }
+
+    /*
+>>>>>>> ustun
         1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
 
         2)asagidaki durumlari switch veya if ile set ediniz
