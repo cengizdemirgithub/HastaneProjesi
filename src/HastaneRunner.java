@@ -18,7 +18,7 @@ public class HastaneRunner {
         //  System.out.println(hastaBul(aktüelDurum));//
         secim();
        //hastaBul();
-        hastaDurumuBul(aktüelDurum);
+
         son(hastaBul());
 
 
@@ -61,16 +61,17 @@ public class HastaneRunner {
 
         System.out.println("----------------------------------------------\n");
         System.out.println("hastanin son bilgileri: \n" + hastaBul.toString());
+        hastaDurumuBul(aktüelDurum);
         System.out.println("----------------------------------------------");
     }
 
     public static void giris() {
 
-        System.out.println("adinizi giriniz");//girdigi ad veri banksayilyal uyusmasi lazim
+        System.out.print("Adinizi giriniz: ");//girdigi ad veri banksayilyal uyusmasi lazim
         hastaIsim = scanner.next();
-        System.out.println("soyadinizi giriniz");
+        System.out.print("Soyadinizi giriniz: ");
         hastaSoyIsim = scanner.next();
-        System.out.println("id giriniz");
+        System.out.print("Id giriniz: ");
         hastaId = scanner.nextInt();
         hastaBul();
 
