@@ -28,3 +28,4 @@ public class Durum {
         return aciliyetDurumu;
     }
 }
+

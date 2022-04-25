@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class HastaneRunner {
+
     private static Hastane hastane = new Hastane();//Hastane sinifindan bir hastane objesi olusturuldu
     private static String aktüelDurum;
     private static Hasta hasta = new Hasta();
@@ -76,6 +77,24 @@ public class HastaneRunner {
         hastaBul();
 
 
+
+
+
+
+
+
+
+
+        /*
+        1) kullanicidan hastaligini girmesini isteyiniz,// swictch case ile hastaligini numara ile girsin
+        -elimizde kullanicaidan gelen hastalik ismi var
+        2) aciliyet durumu metodu cagrilsin (true ya da false) (bilgilendrime yazilabilir)
+        -kullanicidan gelen aciliyet durumu var
+        3)doktorun unvani istenilecek (doktorUnvan metodu ile)
+        -metoddan doktorun unvanini aliyoruz#
+        4)"doktorunuz su isimdeki su unvandaki kisidir" vb yazdirilacak.
+         */
+
     }
 
     public static Durum hastaDurumuBul(String aktüelDurum) {
@@ -108,9 +127,13 @@ public class HastaneRunner {
 
 
 
+
         }
+
+
         return hastaDurumu;
     }
+
 
 
     public static Hasta hastaBul() {//burasi bize ilgili hasta ile ilgili bilgilerin dogrulugunu kontrol edecek
@@ -130,6 +153,22 @@ public class HastaneRunner {
             giris();
 
         }
+
+
+    /*
+        1)Durum classindan bir Obje olusturunuz// Durum hastaDurumu = new Durum(); gibi
+        2)asagidaki durumlari switch veya if ile set ediniz
+        case " Allerji":  aciliyet => false
+        case " Bas agrisi":  aciliyet => false
+        case " Diabet":  aciliyet => false
+        case " Soguk alginligi":  aciliyet => false
+        case " Migren":  aciliyet => true
+        case " Kalp hastaliklari":  aciliyet => true
+        default:
+        System.out.println(“Gecerli bir durum degil");
+        Ve return hastaDurumu;
+         */
+
 
 
         for (String each : hastane.hastaSoyIsimleri
@@ -208,3 +247,4 @@ public class HastaneRunner {
 
     }
 }
+
