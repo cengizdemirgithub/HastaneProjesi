@@ -2,6 +2,9 @@ public class Durum {
     private String aktüelDurum;
     private boolean aciliyetDurumu;
 
+
+
+
     public String getAktüelDurum() {
         return aktüelDurum;
     }
@@ -10,14 +13,16 @@ public class Durum {
         this.aktüelDurum = aktüelDurum;
     }
 
-    public boolean isAciliyetDurumu() {
-        return aciliyetDurumu;
-    }
+    //public boolean isAciliyetDurumu() {
+      //  return aciliyetDurumu;
+   // }
 
-    public void setAciliyetDurumu(boolean aciliyetDurumu) {
-        this.aciliyetDurumu = aciliyetDurumu;
-    }
+   // public void setAciliyetDurumu(boolean aciliyetDurumu) {
+      //  this.aciliyetDurumu = aciliyetDurumu;
+    //}
+
     public boolean aciliyetDurumu(){return aciliyetDurumu;}
+
     public boolean setAciliyet(boolean aciliyetDurumu){
         this.aciliyetDurumu=aciliyetDurumu();
         return aciliyetDurumu;

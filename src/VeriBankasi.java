@@ -5,7 +5,7 @@ public class VeriBankasi {
 
     String[] unvanlar = { "Allergist", "Norolog", "Genel cerrah", "Cocuk doktoru", "Dahiliye", "Kardiolog" };
 
-    String[] hastaIsimleri = { "Warren", "Petanow", "Sophia", "Emma", "Darian", "Peter" };
+   String[] hastaIsimleri = { "Warren", "Petanow", "Sophia", "Emma", "Darian", "Peter" };
     String[] hastaSoyIsimleri= { "Traven", "William", "George", "Tristan", "Luis", "Cole"};
 
     String[] durumlar= { "Allerji", "Bas agrisi", "Diabet", "Soguk alginligi", "Migren", "Kalp hastaliklari"};

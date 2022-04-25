@@ -2,7 +2,25 @@ public class Hasta {
     private String isim;
     private String soyIsim;
     private int hastaID;
-    private Durum hastaDurumu;
+    private String hastaDurumu;
+
+    @Override
+    public String toString() {
+        return "Hasta{" +
+                "isim='" + isim + '\'' +
+                ", soyIsim='" + soyIsim + '\'' +
+                ", hastaID=" + hastaID +
+                ", hastaDurumu=" + hastaDurumu +
+                '}';
+    }
+
+    public String getHastaDurumu() {
+        return hastaDurumu;
+    }
+
+    public void setHastaDurumu(String hastaDurumu) {
+        this.hastaDurumu = hastaDurumu;
+    }
 
     public String getIsim() {
         return isim;
@@ -28,11 +46,5 @@ public class Hasta {
         this.hastaID = hastaID;
     }
 
-    public Durum getHastaDurumu() {
-        return hastaDurumu;
-    }
 
-    public void setHastaDurumu(Durum hastaDurumu) {
-        this.hastaDurumu = hastaDurumu;
-    }
 }
